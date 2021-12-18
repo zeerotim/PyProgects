@@ -10,4 +10,4 @@ last_name = input("Введите вашу фамилию: ")
 age = int(input("Сколько вам лет: "))
 
 print("Вас зовут: ", first_name, last_name)
-print("Ваш возраст: ", age)
+print(F"Ваш возраст: {age}" )
