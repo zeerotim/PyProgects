@@ -18,7 +18,7 @@ print(goods_list)
 
 # Создаем словари характеристик
 list_charct = [] # болванка для списка характеристик
-
+# в качестве словаря характеристик будем использовать переменную good
 for key in good:
     list_charct.clear()
     for i in range(count_goods):
