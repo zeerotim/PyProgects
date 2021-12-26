@@ -12,8 +12,9 @@ if new_el in my_list:
     ind = my_list.index(new_el)
     my_list.insert(ind, new_el)
 else:
-    max_value = my_list[0]
-    min_value = my_list[len(my_list)-1]
+    # max_value = my_list[0]
+    max_value = max(my_list)
+    min_value = min(my_list)
     if new_el > max_value:
         my_list.insert(0, new_el)
     elif new_el < min_value:
@@ -24,6 +25,6 @@ else:
             ind += 1
         my_list.insert(ind, new_el)
 # Можно было вообще не париться с кучей уcловий, а просто добавить новый элемент в список (append)
-# и отсортировать по убыванию :)
+# и отсортировать его по убыванию :)
 
 print(my_list)
