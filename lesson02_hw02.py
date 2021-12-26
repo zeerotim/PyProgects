@@ -14,9 +14,10 @@ for i in range(len_list):
 for i in range(0, len_list, 2):
     if i == len_list-1 and len_list%2 == 1:
         break
-    buffer = my_list[i]
-    my_list[i] = my_list[i+1]
-    my_list[i + 1] = buffer
+    # buffer = my_list[i]
+    # my_list[i] = my_list[i+1]
+    # my_list[i + 1] = buffer
+    my_list[i], my_list[i + 1] = my_list[i+1], my_list[i]
 
 print(my_list)
 

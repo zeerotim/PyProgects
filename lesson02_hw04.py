@@ -4,5 +4,5 @@
 
 long_string = input("Введите строку из нескольких слов: ")
 list_str = long_string.split(" ")
-for el in enumerate(list_str):
-    print(f"Номер слова: {el[0]+1} , обрезанное до 10 симв слово: {el[1][:10]}")
+for num, el in enumerate(list_str, 1):
+    print(f"Номер слова: {num}, обрезанное до 10 симв слово: {el[:10]}")
