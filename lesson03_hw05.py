@@ -7,9 +7,9 @@ def sum_string(numbers:str, end_simb = "end"):
 
     if list_numbers[-1] == end_simb:
         # по-хорошему надо бы обработать возможный некорректный ввод нечисловых значений
-        return sum(list(map(lambda x: int(x), list_numbers[:len_list-1]))), True
+        return sum(list(map(lambda x: int(x) if x.isdigit() else 0, list_numbers[:len_list-1]))), True
     else:
-        return sum(list(map(lambda x: int(x), list_numbers))), False
+        return sum(list(map(lambda x: int(x) if x.isdigit() else 0, list_numbers))), False
 
 # Основная программа
 
